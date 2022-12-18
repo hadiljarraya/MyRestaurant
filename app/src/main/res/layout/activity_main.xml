@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/facture3"
+    >
+    <TextView
+        android:id="@+id/txtTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="My Bill"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtPlayer1"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="100dp"
+                android:text="Table number :"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+
+                android:autofillHints=""
+                android:hint="put your table number"
+                android:inputType="number"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtPlayer2"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Total :"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+       <TableRow>
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textStyle="bold" />
+       </TableRow>
+    </TableLayout>
+    <Button
+        android:id= "@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="send"
+        app:backgroundTint="@color/orange"
+        android:textSize="20dp"
+        android:background="@drawable/button_customized_form"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_customized_form"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/orange"
+        android:text="pay"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
